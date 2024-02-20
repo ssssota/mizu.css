@@ -1,11 +1,11 @@
 button,
 select,
-input[type='submit'],
-input[type='reset'],
-input[type='button'],
-input[type='checkbox'],
-input[type='range'],
-input[type='radio'] {
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+input[type="checkbox"],
+input[type="range"],
+input[type="radio"] {
   cursor: pointer;
 }
 
@@ -14,8 +14,8 @@ select {
   display: block;
 }
 
-[type='checkbox'],
-[type='radio'] {
+[type="checkbox"],
+[type="radio"] {
   display: initial;
 }
 
@@ -36,34 +36,34 @@ select {
 }
 
 button,
-input[type='submit'],
-input[type='reset'],
-input[type='button'] {
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
   background-color: var(--button-base);
   padding-right: 30px;
   padding-left: 30px;
 }
 
 button:hover,
-input[type='submit']:hover,
-input[type='reset']:hover,
-input[type='button']:hover {
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover {
   background: var(--button-hover);
 }
 
-input[type='color'] {
+input[type="color"] {
   min-height: 2rem;
   padding: 8px;
   cursor: pointer;
 }
 
-input[type='checkbox'],
-input[type='radio'] {
+input[type="checkbox"],
+input[type="radio"] {
   height: 1em;
   width: 1em;
 }
 
-input[type='radio'] {
+input[type="radio"] {
   border-radius: 100%;
 }
 
@@ -77,8 +77,8 @@ label {
   display: inline-block;
 }
 
-input:not([type='checkbox']):not([type='radio']),
-input[type='range'],
+input:not([type="checkbox"]):not([type="radio"]),
+input[type="range"],
 select,
 button,
 textarea {
@@ -102,7 +102,8 @@ textarea:not([rows]) {
 }
 
 select {
-  background: var(--background) var(--select-arrow) calc(100% - 12px) 50% / 12px no-repeat;
+  background: var(--background) var(--select-arrow) calc(100% - 12px) 50% / 12px
+    no-repeat;
   padding-right: 35px;
 }
 
@@ -123,12 +124,12 @@ textarea:focus {
   box-shadow: 0 0 0 2px var(--focus);
 }
 
-input[type='checkbox']:active,
-input[type='radio']:active,
-input[type='submit']:active,
-input[type='reset']:active,
-input[type='button']:active,
-input[type='range']:active,
+input[type="checkbox"]:active,
+input[type="radio"]:active,
+input[type="submit"]:active,
+input[type="reset"]:active,
+input[type="button"]:active,
+input[type="range"]:active,
 button:active {
   transform: translateY(2px);
 }
