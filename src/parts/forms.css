@@ -100,7 +100,6 @@
 }
 
 :where(textarea:not([rows])) {
-  form-sizing: content;
   min-height: calc(var(--px) * 40);
   height: calc(var(--px) * 140);
 }
@@ -148,6 +147,10 @@
   margin: 0;
   margin-bottom: calc(var(--px) * 12);
   padding: calc(var(--px) * 10);
+}
+
+:where(fieldset :is(h1, h2, h3, h4, h5, h6, p)) {
+  margin: 0;
 }
 
 :where(legend) {

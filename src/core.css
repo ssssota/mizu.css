@@ -1,0 +1,6 @@
+/**
+ * Without theme variables version
+ */
+
+@import "./variables/shared.css";
+@import "./parts/core.css";
