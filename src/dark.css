@@ -2,5 +2,6 @@
  * Forced dark theme version
  */
 
+@import "./variables/shared.css";
 @import "./variables/dark.css";
 @import "./parts/core.css";

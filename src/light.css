@@ -2,5 +2,6 @@
  * Forced light theme version
  */
 
+@import "./variables/shared.css";
 @import "./variables/light.css";
 @import "./parts/core.css";

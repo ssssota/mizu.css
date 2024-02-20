@@ -1,0 +1,44 @@
+details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: var(--background-alt);
+  padding: calc(var(--px) * 10) calc(var(--px) * 10) 0;
+  margin: 1em 0;
+  border-radius: calc(var(--px) * 6);
+  overflow: hidden;
+}
+
+details[open] {
+  padding: calc(var(--px) * 10);
+}
+
+details > :last-child {
+  margin-bottom: 0;
+}
+
+details[open] summary {
+  margin-bottom: calc(var(--px) * 10);
+}
+
+summary {
+  display: list-item;
+  background-color: var(--background);
+  padding: calc(var(--px) * 10);
+  margin: calc(var(--px) * -10) calc(var(--px) * -10) 0;
+  cursor: pointer;
+  outline: none;
+}
+
+summary:hover,
+summary:focus {
+  text-decoration: underline;
+}
+
+details > :not(summary) {
+  margin-top: 0;
+}
+
+summary::-webkit-details-marker {
+  color: var(--text-main);
+}

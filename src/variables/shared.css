@@ -1,0 +1,5 @@
+:root {
+  --px: calc(1rem / 16);
+  --animation-duration: 0.1s;
+  --line-height: 1.5;
+}

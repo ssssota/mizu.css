@@ -9,8 +9,8 @@ h3,
 h4,
 h5,
 h6 {
-  margin-bottom: 12px;
-  margin-top: 24px;
+  margin-bottom: calc(var(--px) * 12);
+  margin-top: calc(var(--px) * 24);
 }
 
 h1,
@@ -45,7 +45,7 @@ q::after {
 
 blockquote,
 q {
-  border-left: 4px solid var(--focus);
+  border-left: calc(var(--px) * 4) solid var(--focus);
   margin: 1.5em 0;
   padding: 0.5em 1em;
   font-style: italic;
@@ -64,22 +64,10 @@ address {
   font-style: normal;
 }
 
-a[href^="mailto\:"]::before {
-  content: "📧 ";
-}
-
-a[href^="tel\:"]::before {
-  content: "📞 ";
-}
-
-a[href^="sms\:"]::before {
-  content: "💬 ";
-}
-
 mark {
   background-color: var(--highlight);
-  border-radius: 2px;
-  padding: 0 2px 0 2px;
+  border-radius: calc(var(--px) * 2);
+  padding: 0 calc(var(--px) * 2);
   color: #000;
 }
 

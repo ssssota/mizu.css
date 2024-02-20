@@ -20,10 +20,10 @@ body {
     "Apple Color Emoji",
     "Noto Color Emoji",
     sans-serif;
-  line-height: 1.4;
-  max-width: 800px;
-  margin: 20px auto;
-  padding: 0 10px;
+  line-height: var(--line-height);
+  max-width: calc(var(--px) * 800);
+  margin: calc(var(--px) * 20) auto;
+  padding: 0 calc(var(--px) * 10);
   word-wrap: break-word;
   color: var(--text-main);
   background: var(--background-body);

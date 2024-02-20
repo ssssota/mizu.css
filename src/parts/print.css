@@ -13,7 +13,7 @@
   button,
   input,
   textarea {
-    border: 1px solid #000;
+    border: var(--px) solid #000;
   }
 
   body,

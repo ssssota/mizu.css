@@ -27,11 +27,11 @@ select {
   background-color: var(--background);
   font-family: inherit;
   font-size: inherit;
-  margin-right: 6px;
-  margin-bottom: 6px;
-  padding: 10px;
+  margin-right: calc(var(--px) * 6);
+  margin-bottom: calc(var(--px) * 6);
+  padding: calc(var(--px) * 10);
   border: none;
-  border-radius: 6px;
+  border-radius: calc(var(--px) * 6);
   outline: none;
 }
 
@@ -40,8 +40,8 @@ input[type="submit"],
 input[type="reset"],
 input[type="button"] {
   background-color: var(--button-base);
-  padding-right: 30px;
-  padding-left: 30px;
+  padding-right: calc(var(--px) * 30);
+  padding-left: calc(var(--px) * 30);
 }
 
 button:hover,
@@ -53,7 +53,7 @@ input[type="button"]:hover {
 
 input[type="color"] {
   min-height: 2rem;
-  padding: 8px;
+  padding: calc(var(--px) * 8);
   cursor: pointer;
 }
 
@@ -73,7 +73,7 @@ input {
 
 label {
   vertical-align: middle;
-  margin-bottom: 4px;
+  margin-bottom: calc(var(--px) * 4);
   display: inline-block;
 }
 
@@ -83,6 +83,7 @@ select,
 button,
 textarea {
   -webkit-appearance: none;
+  appearance: none;
 }
 
 textarea {
@@ -97,14 +98,15 @@ textarea:not([cols]) {
 }
 
 textarea:not([rows]) {
-  min-height: 40px;
-  height: 140px;
+  form-sizing: content;
+  min-height: calc(var(--px) * 40);
+  height: calc(var(--px) * 140);
 }
 
 select {
-  background: var(--background) var(--select-arrow) calc(100% - 12px) 50% / 12px
-    no-repeat;
-  padding-right: 35px;
+  background: var(--background) var(--select-arrow)
+    calc(100% - calc(var(--px) * 12)) 50% / calc(var(--px) * 12) no-repeat;
+  padding-right: calc(var(--px) * 35);
 }
 
 select::-ms-expand {
@@ -112,7 +114,7 @@ select::-ms-expand {
 }
 
 select[multiple] {
-  padding-right: 10px;
+  padding-right: calc(var(--px) * 10);
   background-image: none;
   overflow-y: auto;
 }
@@ -121,7 +123,7 @@ input:focus,
 select:focus,
 button:focus,
 textarea:focus {
-  box-shadow: 0 0 0 2px var(--focus);
+  box-shadow: 0 0 0 calc(var(--px) * 2) var(--focus);
 }
 
 input[type="checkbox"]:active,
@@ -131,7 +133,7 @@ input[type="reset"]:active,
 input[type="button"]:active,
 input[type="range"]:active,
 button:active {
-  transform: translateY(2px);
+  transform: translateY(calc(var(--px) * 2));
 }
 
 input:disabled,
@@ -147,11 +149,11 @@ textarea:disabled {
 }
 
 fieldset {
-  border: 1px var(--focus) solid;
-  border-radius: 6px;
+  border: var(--px) var(--focus) solid;
+  border-radius: calc(var(--px) * 6);
   margin: 0;
-  margin-bottom: 12px;
-  padding: 10px;
+  margin-bottom: calc(var(--px) * 12);
+  padding: calc(var(--px) * 10);
 }
 
 legend {
