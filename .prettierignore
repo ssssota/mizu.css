@@ -1,3 +1,4 @@
 dist
+min
 node_modules
 pnpm-lock.yaml
