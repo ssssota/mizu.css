@@ -4,7 +4,7 @@ export default defineConfig(() => {
   return {
     build: {
       rollupOptions: {
-        input: ["src/builds/dark.css", "src/builds/light.css"],
+        input: ["src/dark.css", "src/light.css", "src/water.css"],
         output: { assetFileNames: ({ name }) => name! },
       },
     },
