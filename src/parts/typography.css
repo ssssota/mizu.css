@@ -1,77 +1,56 @@
-h1 {
+:where(h1) {
   font-size: 2.2em;
   margin-top: 0;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+:where(h1, h2, h3, h4, h5, h6) {
   margin-bottom: calc(var(--px) * 12);
   margin-top: calc(var(--px) * 24);
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-strong {
+:where(h1, h2, h3, h4, h5, h6, strong) {
   color: var(--text-bright);
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-b,
-strong,
-th {
+:where(h1, h2, h3, h4, h5, h6, b, strong, th) {
   font-weight: 600;
 }
 
-q::before {
+:where(q::before) {
   content: none;
 }
 
-q::after {
+:where(q::after) {
   content: none;
 }
 
-blockquote,
-q {
+:where(blockquote, q) {
   border-left: calc(var(--px) * 4) solid var(--focus);
   margin: 1.5em 0;
   padding: 0.5em 1em;
   font-style: italic;
 }
 
-blockquote > footer {
+:where(blockquote > footer) {
   font-style: normal;
   border: 0;
 }
 
-blockquote cite {
+:where(blockquote cite) {
   font-style: normal;
 }
 
-address {
+:where(address) {
   font-style: normal;
 }
 
-mark {
+:where(mark) {
   background-color: var(--highlight);
   border-radius: calc(var(--px) * 2);
   padding: 0 calc(var(--px) * 2);
   color: #000;
 }
 
-a > code,
-a > strong {
+:where(a > code, a > strong) {
   color: inherit;
 }

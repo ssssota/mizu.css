@@ -1,28 +1,25 @@
-button,
-select,
-input[type="submit"],
-input[type="reset"],
-input[type="button"],
-input[type="checkbox"],
-input[type="range"],
-input[type="radio"] {
+:where(
+    button,
+    select,
+    input[type="submit"],
+    input[type="reset"],
+    input[type="button"],
+    input[type="checkbox"],
+    input[type="range"],
+    input[type="radio"]
+  ) {
   cursor: pointer;
 }
 
-input,
-select {
+:where(input, select) {
   display: block;
 }
 
-[type="checkbox"],
-[type="radio"] {
+:where([type="checkbox"], [type="radio"]) {
   display: initial;
 }
 
-input,
-button,
-textarea,
-select {
+:where(input, button, textarea, select) {
   color: var(--form-text);
   background-color: var(--background);
   font-family: inherit;
@@ -35,120 +32,117 @@ select {
   outline: none;
 }
 
-button,
-input[type="submit"],
-input[type="reset"],
-input[type="button"] {
+:where(
+    button,
+    input[type="submit"],
+    input[type="reset"],
+    input[type="button"]
+  ) {
   background-color: var(--button-base);
   padding-right: calc(var(--px) * 30);
   padding-left: calc(var(--px) * 30);
 }
 
-button:hover,
-input[type="submit"]:hover,
-input[type="reset"]:hover,
-input[type="button"]:hover {
+:where(
+    button:hover,
+    input[type="submit"]:hover,
+    input[type="reset"]:hover,
+    input[type="button"]:hover
+  ) {
   background: var(--button-hover);
 }
 
-input[type="color"] {
+:where(input[type="color"]) {
   min-height: 2rem;
   padding: calc(var(--px) * 8);
   cursor: pointer;
 }
 
-input[type="checkbox"],
-input[type="radio"] {
+:where(input[type="checkbox"], input[type="radio"]) {
   height: 1em;
   width: 1em;
 }
 
-input[type="radio"] {
+:where(input[type="radio"]) {
   border-radius: 100%;
 }
 
-input {
+:where(input) {
   vertical-align: top;
 }
 
-label {
+:where(label) {
   vertical-align: middle;
   margin-bottom: calc(var(--px) * 4);
   display: inline-block;
 }
 
-input:not([type="checkbox"]):not([type="radio"]),
-input[type="range"],
-select,
-button,
-textarea {
+:where(
+    input:not([type="checkbox"]):not([type="radio"]),
+    input[type="range"],
+    select,
+    button,
+    textarea
+  ) {
   -webkit-appearance: none;
   appearance: none;
 }
 
-textarea {
+:where(textarea) {
   display: block;
   margin-right: 0;
   box-sizing: border-box;
   resize: vertical;
 }
 
-textarea:not([cols]) {
+:where(textarea:not([cols])) {
   width: 100%;
 }
 
-textarea:not([rows]) {
+:where(textarea:not([rows])) {
   form-sizing: content;
   min-height: calc(var(--px) * 40);
   height: calc(var(--px) * 140);
 }
 
-select {
+:where(select) {
   background: var(--background) var(--select-arrow)
     calc(100% - calc(var(--px) * 12)) 50% / calc(var(--px) * 12) no-repeat;
   padding-right: calc(var(--px) * 35);
 }
 
-select::-ms-expand {
-  display: none;
-}
-
-select[multiple] {
+:where(select[multiple]) {
   padding-right: calc(var(--px) * 10);
   background-image: none;
   overflow-y: auto;
 }
 
-input:focus,
-select:focus,
-button:focus,
-textarea:focus {
+:where(input:focus, select:focus, button:focus, textarea:focus) {
   box-shadow: 0 0 0 calc(var(--px) * 2) var(--focus);
 }
 
-input[type="checkbox"]:active,
-input[type="radio"]:active,
-input[type="submit"]:active,
-input[type="reset"]:active,
-input[type="button"]:active,
-input[type="range"]:active,
-button:active {
+:where(
+    input[type="checkbox"]:active,
+    input[type="radio"]:active,
+    input[type="submit"]:active,
+    input[type="reset"]:active,
+    input[type="button"]:active,
+    input[type="range"]:active,
+    button:active
+  ) {
   transform: translateY(calc(var(--px) * 2));
 }
 
-input:disabled,
-select:disabled,
-button:disabled,
-textarea:disabled {
+:where(input:disabled, select:disabled, button:disabled, textarea:disabled) {
   cursor: not-allowed;
   opacity: 0.5;
 }
 
-::placeholder {
+:where(::placeholder) {
   color: var(--form-placeholder);
 }
 
-fieldset {
+:where(fieldset) {
   border: var(--px) var(--focus) solid;
   border-radius: calc(var(--px) * 6);
   margin: 0;
@@ -156,7 +150,7 @@ fieldset {
   padding: calc(var(--px) * 10);
 }
 
-legend {
+:where(legend) {
   font-size: 0.9em;
   font-weight: 600;
 }

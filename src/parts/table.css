@@ -1,38 +1,37 @@
-table {
+:where(table) {
   border-collapse: collapse;
   margin-bottom: calc(var(--px) * 10);
   width: 100%;
   table-layout: fixed;
 }
 
-table caption {
+:where(table caption) {
   text-align: left;
 }
 
-td,
-th {
+:where(td, th) {
   padding: calc(var(--px) * 6);
   text-align: left;
   vertical-align: top;
   word-wrap: break-word;
 }
 
-thead {
+:where(thead) {
   border-bottom: var(--px) solid var(--border);
 }
 
-tfoot {
+:where(tfoot) {
   border-top: var(--px) solid var(--border);
 }
 
-tbody tr:nth-child(even) {
+:where(tbody tr:nth-child(even)) {
   background-color: var(--background);
 }
 
-tbody tr:nth-child(even) button {
+:where(tbody tr:nth-child(even) button) {
   background-color: var(--background-alt);
 }
 
-tbody tr:nth-child(even) button:hover {
+:where(tbody tr:nth-child(even) button:hover) {
   background-color: var(--background-body);
 }

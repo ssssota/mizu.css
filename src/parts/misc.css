@@ -1,39 +1,38 @@
-img,
-video {
+:where(img, video) {
   max-width: 100%;
   height: auto;
 }
 
-hr {
+:where(hr) {
   border: none;
   border-top: var(--px) solid var(--border);
 }
 
-::-webkit-scrollbar {
+:where(::-webkit-scrollbar) {
   height: calc(var(--px) * 10);
   width: calc(var(--px) * 10);
 }
 
-::-webkit-scrollbar-track {
+:where(::-webkit-scrollbar-track) {
   background: var(--background);
   border-radius: calc(var(--px) * 6);
 }
 
-::-webkit-scrollbar-thumb {
+:where(::-webkit-scrollbar-thumb) {
   background: var(--scrollbar-thumb);
   border-radius: calc(var(--px) * 6);
 }
 
-::-webkit-scrollbar-thumb:hover {
+:where(::-webkit-scrollbar-thumb:hover) {
   background: var(--scrollbar-thumb-hover);
 }
 
-::selection {
+:where(::selection) {
   background-color: var(--selection);
   color: var(--text-bright);
 }
 
-dialog {
+:where(dialog) {
   background-color: var(--background-alt);
   color: var(--text-main);
   border: none;
@@ -42,7 +41,7 @@ dialog {
   padding: calc(var(--px) * 10) calc(var(--px) * 30);
 }
 
-dialog > header:first-child {
+:where(dialog > header:first-child) {
   background-color: var(--background);
   border-radius: calc(var(--px) * 6) calc(var(--px) * 6) 0 0;
   margin: calc(var(--px) * -10) calc(var(--px) * -30) calc(var(--px) * 10);
@@ -50,17 +49,17 @@ dialog > header:first-child {
   text-align: center;
 }
 
-dialog::backdrop {
+:where(dialog::backdrop) {
   background: #0000009c;
   backdrop-filter: blur(calc(var(--px) * 4));
 }
 
-footer {
+:where(footer) {
   border-top: var(--px) solid var(--border);
   padding-top: calc(var(--px) * 10);
   color: var(--text-muted);
 }
 
-body > footer {
+:where(body > footer) {
   margin-top: calc(var(--px) * 40);
 }
