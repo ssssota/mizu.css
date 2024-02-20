@@ -3,7 +3,7 @@ description: Set up Node.js and dependencies
 
 inputs:
   node-version:
-    description: 'The Node.js version to use'
+    description: "The Node.js version to use"
     required: true
     default: lts/*
 
@@ -15,5 +15,5 @@ runs:
       with:
         node-version: ${{ inputs.node-version }}
         cache: pnpm
-    - run: corepack enable
-    - run: pnpm install
+    - run: corepack enable && pnpm install
+      shell: bash
