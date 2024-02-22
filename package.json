@@ -5,8 +5,10 @@
   "type": "module",
   "main": "dist/mizu.css",
   "scripts": {
+    "dev": "vite",
     "build": "pnpm run \"/^build:.*/\"",
-    "build:normal": "vite build",
+    "build:page": "vite build",
+    "build:normal": "vite build --mode normal",
     "build:minify": "vite build --mode minify",
     "fmt": "prettier --write .",
     "lint": "prettier --check .",

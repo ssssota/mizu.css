@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>mizu.css</title>
     <link rel="stylesheet" href="./src/mizu.css" />
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/light.min.css"> -->
+    <base target="htmz" />
   </head>
   <body>
     <header>
@@ -17,6 +17,22 @@
       </p>
     </header>
     <main>
+      <section>
+        <h2>Installation</h2>
+        <form>
+          <button formaction="./npm.html#content">npm (with bundler)</button>
+          <button formaction="./link.html#content">&lt;link&gt; tag</button>
+        </form>
+        <div id="content">↑ Select</div>
+      </section>
+      <section>
+        <h2>Themes</h2>
+        <form>
+          <button formaction="./themes/auto.html#style">Auto</button>
+          <button formaction="./themes/dark.html#style">Dark</button>
+          <button formaction="./themes/light.html#style">Light</button>
+        </form>
+      </section>
       <section>
         <h2>Forms</h2>
         <p>
@@ -89,5 +105,12 @@
     <footer>
       <small>&copy; TOMIKAWA Sotaro</small>
     </footer>
+    <iframe
+      hidden
+      name="htmz"
+      onload="setTimeout(()=>document.querySelector(contentWindow.location.hash||null)?.replaceWith(...contentDocument.body.childNodes))"
+    ></iframe>
+    <!-- HACK: link element with id attribute is not accepted from vite (https://t.co/ASXBSzcHmA) -->
+    <style id="style"></style>
   </body>
 </html>
