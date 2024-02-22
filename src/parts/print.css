@@ -4,7 +4,7 @@
   }
 
   :where(button, input, textarea) {
-    border: var(--px) solid #000;
+    border: 1px solid #000;
   }
 
   :where(

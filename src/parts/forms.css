@@ -24,11 +24,11 @@
   background-color: var(--background);
   font-family: inherit;
   font-size: inherit;
-  margin-right: calc(var(--px) * 6);
-  margin-bottom: calc(var(--px) * 6);
-  padding: calc(var(--px) * 10);
+  margin-right: 0.375rem;
+  margin-bottom: 0.375rem;
+  padding: 0.625rem;
   border: none;
-  border-radius: calc(var(--px) * 6);
+  border-radius: 0.375rem;
   outline: none;
 }
 
@@ -39,8 +39,8 @@
     input[type="button"]
   ) {
   background-color: var(--button-base);
-  padding-right: calc(var(--px) * 30);
-  padding-left: calc(var(--px) * 30);
+  padding-right: 1.875rem;
+  padding-left: 1.875rem;
 }
 
 :where(
@@ -54,7 +54,7 @@
 
 :where(input[type="color"]) {
   min-height: 2rem;
-  padding: calc(var(--px) * 8);
+  padding: 0.5rem;
   cursor: pointer;
 }
 
@@ -73,7 +73,7 @@
 
 :where(label) {
   vertical-align: middle;
-  margin-bottom: calc(var(--px) * 4);
+  margin-bottom: 0.25rem;
   display: inline-block;
 }
 
@@ -100,24 +100,24 @@
 }
 
 :where(textarea:not([rows])) {
-  min-height: calc(var(--px) * 40);
-  height: calc(var(--px) * 140);
+  min-height: 2.5rem;
+  height: 8.75rem;
 }
 
 :where(select) {
-  background: var(--background) var(--select-arrow)
-    calc(100% - calc(var(--px) * 12)) 50% / calc(var(--px) * 12) no-repeat;
-  padding-right: calc(var(--px) * 35);
+  background: var(--background) var(--select-arrow) calc(100% - 0.75rem) 50% /
+    0.75rem no-repeat;
+  padding-right: 2.25rem;
 }
 
 :where(select[multiple]) {
-  padding-right: calc(var(--px) * 10);
+  padding-right: 0.625rem;
   background-image: none;
   overflow-y: auto;
 }
 
 :where(input:focus, select:focus, button:focus, textarea:focus) {
-  box-shadow: 0 0 0 calc(var(--px) * 2) var(--focus);
+  box-shadow: 0 0 0 0.125rem var(--focus);
 }
 
 :where(
@@ -129,7 +129,7 @@
     input[type="range"]:active,
     button:active
   ) {
-  transform: translateY(calc(var(--px) * 2));
+  transform: translateY(0.125rem);
 }
 
 :where(input:disabled, select:disabled, button:disabled, textarea:disabled) {
@@ -142,11 +142,11 @@
 }
 
 :where(fieldset) {
-  border: var(--px) var(--focus) solid;
-  border-radius: calc(var(--px) * 6);
+  border: 1px var(--focus) solid;
+  border-radius: 0.375rem;
   margin: 0;
-  margin-bottom: calc(var(--px) * 12);
-  padding: calc(var(--px) * 10);
+  margin-bottom: 0.75rem;
+  padding: 0.625rem;
 }
 
 :where(fieldset :is(h1, h2, h3, h4, h5, h6, p)) {

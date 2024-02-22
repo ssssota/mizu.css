@@ -4,8 +4,8 @@
 }
 
 :where(h1, h2, h3, h4, h5, h6) {
-  margin-bottom: calc(var(--px) * 12);
-  margin-top: calc(var(--px) * 24);
+  margin-bottom: 0.75rem;
+  margin-top: 1.5rem;
 }
 
 :where(h1, h2, h3, h4, h5, h6, strong) {
@@ -25,7 +25,7 @@
 }
 
 :where(blockquote, q) {
-  border-left: calc(var(--px) * 4) solid var(--focus);
+  border-left: 0.25rem solid var(--focus);
   margin: 1.5em 0;
   padding: 0.5em 1em;
   font-style: italic;
@@ -46,8 +46,8 @@
 
 :where(mark) {
   background-color: var(--highlight);
-  border-radius: calc(var(--px) * 2);
-  padding: 0 calc(var(--px) * 2);
+  border-radius: 0.125rem;
+  padding: 0 0.125rem;
   color: #000;
 }
 

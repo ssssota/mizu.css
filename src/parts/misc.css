@@ -5,22 +5,22 @@
 
 :where(hr) {
   border: none;
-  border-top: var(--px) solid var(--border);
+  border-top: 1px solid var(--border);
 }
 
 :where(::-webkit-scrollbar) {
-  height: calc(var(--px) * 10);
-  width: calc(var(--px) * 10);
+  height: 0.625rem;
+  width: 0.625rem;
 }
 
 :where(::-webkit-scrollbar-track) {
   background: var(--background);
-  border-radius: calc(var(--px) * 6);
+  border-radius: 0.375rem;
 }
 
 :where(::-webkit-scrollbar-thumb) {
   background: var(--scrollbar-thumb);
-  border-radius: calc(var(--px) * 6);
+  border-radius: 0.375rem;
 }
 
 :where(::-webkit-scrollbar-thumb:hover) {
@@ -36,30 +36,30 @@
   background-color: var(--background-alt);
   color: var(--text-main);
   border: none;
-  border-radius: calc(var(--px) * 6);
+  border-radius: 0.375rem;
   border-color: var(--border);
-  padding: calc(var(--px) * 10) calc(var(--px) * 30);
+  padding: 0.625rem 1.875rem;
 }
 
 :where(dialog > header:first-child) {
   background-color: var(--background);
-  border-radius: calc(var(--px) * 6) calc(var(--px) * 6) 0 0;
-  margin: calc(var(--px) * -10) calc(var(--px) * -30) calc(var(--px) * 10);
-  padding: calc(var(--px) * 10);
+  border-radius: 0.375rem 0.375rem 0 0;
+  margin: -0.625rem 1.875rem 0.625rem;
+  padding: 0.625rem;
   text-align: center;
 }
 
 :where(dialog::backdrop) {
   background: #0000009c;
-  backdrop-filter: blur(calc(var(--px) * 4));
+  backdrop-filter: blur(0.25rem);
 }
 
 :where(footer) {
-  border-top: var(--px) solid var(--border);
-  padding-top: calc(var(--px) * 10);
+  border-top: 1px solid var(--border);
+  padding-top: 0.625rem;
   color: var(--text-muted);
 }
 
 :where(body > footer) {
-  margin-top: calc(var(--px) * 40);
+  margin-top: 2.5rem;
 }

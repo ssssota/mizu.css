@@ -21,9 +21,9 @@
     "Noto Color Emoji",
     sans-serif;
   line-height: var(--line-height);
-  max-width: calc(var(--px) * 800);
-  margin: calc(var(--px) * 20) auto;
-  padding: 0 calc(var(--px) * 10);
+  max-width: 50rem;
+  margin: 1.25rem auto;
+  padding: 0 0.625rem;
   word-wrap: break-word;
   color: var(--text-main);
   background: var(--background-body);

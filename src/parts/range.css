@@ -1,6 +1,6 @@
 input[type="range"] {
-  margin: calc(var(--px) * 10) 0;
-  padding: calc(var(--px) * 10) 0;
+  margin: 0.625rem 0;
+  padding: 0.625rem 0;
   background: transparent;
 }
 
@@ -10,21 +10,21 @@ input[type="range"]:focus {
 
 input[type="range"]::-webkit-slider-runnable-track {
   width: 100%;
-  height: calc(var(--px) * 9.5);
+  height: 0.6rem;
   transition: var(--animation-duration);
   background: var(--background);
-  border-radius: calc(var(--px) * 3);
+  border-radius: 0.1875rem;
 }
 
 input[type="range"]::-webkit-slider-thumb {
-  height: calc(var(--px) * 20);
-  width: calc(var(--px) * 20);
+  height: 1.25rem;
+  width: 1.25rem;
   border-radius: 50%;
   background: var(--text-muted);
   -webkit-appearance: none;
   appearance: none;
   border: none;
-  margin-top: calc(var(--px) * -7);
+  margin-top: -0.45rem;
 }
 
 input[type="range"]:focus::-webkit-slider-runnable-track {
@@ -33,15 +33,15 @@ input[type="range"]:focus::-webkit-slider-runnable-track {
 
 input[type="range"]::-moz-range-track {
   width: 100%;
-  height: calc(var(--px) * 9.5);
+  height: 0.6rem;
   transition: var(--animation-duration);
   background: var(--background);
-  border-radius: calc(var(--px) * 3);
+  border-radius: 0.1875rem;
 }
 
 input[type="range"]::-moz-range-thumb {
-  height: calc(var(--px) * 20);
-  width: calc(var(--px) * 20);
+  height: 1.25rem;
+  width: 1.25rem;
   border-radius: 50%;
   background: var(--text-muted);
   border: none;
