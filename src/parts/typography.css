@@ -16,11 +16,7 @@
   font-weight: 600;
 }
 
-:where(q::before) {
-  content: none;
-}
-
-:where(q::after) {
+:where(q::before, q::after) {
   content: none;
 }
 

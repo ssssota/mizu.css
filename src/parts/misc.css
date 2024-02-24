@@ -44,13 +44,13 @@
 :where(dialog > header:first-child) {
   background-color: var(--background);
   border-radius: 0.375rem 0.375rem 0 0;
-  margin: -0.625rem 1.875rem 0.625rem;
+  margin: -0.625rem -1.875rem 0.625rem;
   padding: 0.625rem;
   text-align: center;
 }
 
-:where(dialog::backdrop) {
-  background: #0000009c;
+:where(dialog)::backdrop {
+  background: rgb(0 0 0 / 60%);
   backdrop-filter: blur(0.25rem);
 }
 
