@@ -10,12 +10,14 @@ export default defineConfig(({ mode }) => {
         build: {
           rollupOptions: { input, output: { assetFileNames, dir: "min" } },
           cssMinify: "lightningcss",
+          copyPublicDir: false,
         },
       };
     case "normal":
       return {
         build: {
           rollupOptions: { input, output: { assetFileNames, dir: "dist" } },
+          copyPublicDir: false,
         },
       };
   }

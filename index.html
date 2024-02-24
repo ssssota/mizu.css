@@ -12,8 +12,9 @@
       <h1>mizu.css</h1>
       <p>
         mizu.css is a classless CSS framework. mizu.css is
-        <strong><i>extremely</i></strong> influenced by water.css, and “mizu”
-        comes from the Japanese translation of “water”, 「水」.
+        <strong><i>extremely</i></strong> influenced by
+        <a href="https://watercss.kognise.dev/" target="_blank">water.css</a>,
+        and “mizu” comes from the Japanese translation of “water”, 「水」.
       </p>
     </header>
     <main>
@@ -85,6 +86,22 @@
             <input type="checkbox" id="checkbox2" />
           </p>
         </fieldset>
+      </section>
+      <section>
+        <h2>Dialog</h2>
+        <button onclick="document.getElementById('dialog').showModal()">
+          Open
+        </button>
+        <dialog id="dialog">
+          <header>Dialog</header>
+          <p>Are you sure?</p>
+          <form>
+            <menu>
+              <button formmethod="dialog">Cancel</button>
+              <button formmethod="dialog">OK</button>
+            </menu>
+          </form>
+        </dialog>
       </section>
       <section>
         <h2>Codes</h2>

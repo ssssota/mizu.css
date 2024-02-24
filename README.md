@@ -15,6 +15,8 @@ comes from the Japanese translation of “water”, 「水」.
 <link rel="stylesheet" href="https://www.unpkg.com/mizu.css/min/light.css" />
 <!-- dark theme -->
 <link rel="stylesheet" href="https://www.unpkg.com/mizu.css/min/dark.css" />
+<!-- without any theme -->
+<link rel="stylesheet" href="https://www.unpkg.com/mizu.css/min/core.css" />
 ```
 
 ### NPM
@@ -32,6 +34,8 @@ import "mizu.css";
 import "mizu.css/light.css";
 // dark theme
 import "mizu.css/dark.css";
+// without any theme
+import "mizu.css/core.css";
 ```
 
 ## License
