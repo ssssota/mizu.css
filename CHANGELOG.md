@@ -1,5 +1,11 @@
 # mizu.css
 
+## 0.1.2
+
+### Patch Changes
+
+- [`e6be50f`](https://github.com/ssssota/mizu.css/commit/e6be50ff22069f9631b09e434df6bd18162bd5f2) Thanks [@ssssota](https://github.com/ssssota)! - Fix broken styles especially dialog element
+
 ## 0.1.1
 
 ### Patch Changes

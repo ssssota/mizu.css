@@ -1,6 +1,6 @@
 {
   "name": "mizu.css",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A drop-in collection of CSS styles to make simple websites just a little nicer",
   "type": "module",
   "main": "dist/mizu.css",
