@@ -1,27 +1,27 @@
 :where(code, samp, time) {
-  background: var(--background);
-  color: var(--code);
-  padding: 0.15rem 0.3rem;
-  border-radius: 0.375rem;
-  font-size: 1em;
+	background: var(--background);
+	color: var(--code);
+	padding: 0.15rem 0.3rem;
+	border-radius: 0.375rem;
+	font-size: 1em;
 }
 
 :where(pre > code) {
-  padding: 0.625rem;
-  display: block;
-  overflow-x: auto;
+	padding: 0.625rem;
+	display: block;
+	overflow-x: auto;
 }
 
 :where(var) {
-  color: var(--variable);
-  font-style: normal;
-  font-family: monospace;
+	color: var(--variable);
+	font-style: normal;
+	font-family: monospace;
 }
 
 :where(kbd) {
-  background: var(--background);
-  border: 1px solid var(--border);
-  border-radius: 0.125rem;
-  color: var(--text-main);
-  padding: 0.125rem 0.25rem;
+	background: var(--background);
+	border: 1px solid var(--border);
+	border-radius: 0.125rem;
+	color: var(--text-main);
+	padding: 0.125rem 0.25rem;
 }

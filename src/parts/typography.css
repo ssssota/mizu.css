@@ -1,52 +1,52 @@
 :where(h1) {
-  font-size: 2.2em;
-  margin-top: 0;
+	font-size: 2.2em;
+	margin-top: 0;
 }
 
 :where(h1, h2, h3, h4, h5, h6) {
-  margin-bottom: 0.75rem;
-  margin-top: 1.5rem;
+	margin-bottom: 0.75rem;
+	margin-top: 1.5rem;
 }
 
 :where(h1, h2, h3, h4, h5, h6, strong) {
-  color: var(--text-bright);
+	color: var(--text-bright);
 }
 
 :where(h1, h2, h3, h4, h5, h6, b, strong, th) {
-  font-weight: 600;
+	font-weight: 600;
 }
 
 :where(q::before, q::after) {
-  content: none;
+	content: none;
 }
 
 :where(blockquote, q) {
-  border-left: 0.25rem solid var(--focus);
-  margin: 1.5em 0;
-  padding: 0.5em 1em;
-  font-style: italic;
+	border-left: 0.25rem solid var(--focus);
+	margin: 1.5em 0;
+	padding: 0.5em 1em;
+	font-style: italic;
 }
 
 :where(blockquote > footer) {
-  font-style: normal;
-  border: 0;
+	font-style: normal;
+	border: 0;
 }
 
 :where(blockquote cite) {
-  font-style: normal;
+	font-style: normal;
 }
 
 :where(address) {
-  font-style: normal;
+	font-style: normal;
 }
 
 :where(mark) {
-  background-color: var(--highlight);
-  border-radius: 0.125rem;
-  padding: 0 0.125rem;
-  color: #000;
+	background-color: var(--highlight);
+	border-radius: 0.125rem;
+	padding: 0 0.125rem;
+	color: #000;
 }
 
 :where(a > code, a > strong) {
-  color: inherit;
+	color: inherit;
 }

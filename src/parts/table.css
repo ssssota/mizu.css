@@ -1,37 +1,37 @@
 :where(table) {
-  border-collapse: collapse;
-  margin-bottom: 0.625rem;
-  width: 100%;
-  table-layout: fixed;
+	border-collapse: collapse;
+	margin-bottom: 0.625rem;
+	width: 100%;
+	table-layout: fixed;
 }
 
 :where(table caption) {
-  text-align: left;
+	text-align: left;
 }
 
 :where(td, th) {
-  padding: 0.375rem;
-  text-align: left;
-  vertical-align: top;
-  word-wrap: break-word;
+	padding: 0.375rem;
+	text-align: left;
+	vertical-align: top;
+	word-wrap: break-word;
 }
 
 :where(thead) {
-  border-bottom: 1px solid var(--border);
+	border-bottom: 1px solid var(--border);
 }
 
 :where(tfoot) {
-  border-top: 1px solid var(--border);
+	border-top: 1px solid var(--border);
 }
 
 :where(tbody tr:nth-child(even)) {
-  background-color: var(--background);
+	background-color: var(--background);
 }
 
 :where(tbody tr:nth-child(even) button) {
-  background-color: var(--background-alt);
+	background-color: var(--background-alt);
 }
 
 :where(tbody tr:nth-child(even) button:hover) {
-  background-color: var(--background-body);
+	background-color: var(--background-body);
 }

@@ -1,159 +1,159 @@
 :where(
-    button,
-    select,
-    input[type="submit"],
-    input[type="reset"],
-    input[type="button"],
-    input[type="checkbox"],
-    input[type="range"],
-    input[type="radio"]
-  ) {
-  cursor: pointer;
+		button,
+		select,
+		input[type="submit"],
+		input[type="reset"],
+		input[type="button"],
+		input[type="checkbox"],
+		input[type="range"],
+		input[type="radio"]
+	) {
+	cursor: pointer;
 }
 
 :where(input, select) {
-  display: block;
+	display: block;
 }
 
 :where([type="checkbox"], [type="radio"]) {
-  display: initial;
+	display: initial;
 }
 
 :where(input, button, textarea, select) {
-  color: var(--form-text);
-  background-color: var(--background);
-  font-family: inherit;
-  font-size: inherit;
-  margin-right: 0.375rem;
-  margin-bottom: 0.375rem;
-  padding: 0.625rem;
-  border: none;
-  border-radius: 0.375rem;
-  outline: none;
+	color: var(--form-text);
+	background-color: var(--background);
+	font-family: inherit;
+	font-size: inherit;
+	margin-right: 0.375rem;
+	margin-bottom: 0.375rem;
+	padding: 0.625rem;
+	border: none;
+	border-radius: 0.375rem;
+	outline: none;
 }
 
 :where(
-    button,
-    input[type="submit"],
-    input[type="reset"],
-    input[type="button"]
-  ) {
-  background-color: var(--button-base);
-  padding-right: 1.875rem;
-  padding-left: 1.875rem;
+		button,
+		input[type="submit"],
+		input[type="reset"],
+		input[type="button"]
+	) {
+	background-color: var(--button-base);
+	padding-right: 1.875rem;
+	padding-left: 1.875rem;
 }
 
 :where(
-    button:hover,
-    input[type="submit"]:hover,
-    input[type="reset"]:hover,
-    input[type="button"]:hover
-  ) {
-  background: var(--button-hover);
+		button:hover,
+		input[type="submit"]:hover,
+		input[type="reset"]:hover,
+		input[type="button"]:hover
+	) {
+	background: var(--button-hover);
 }
 
 :where(input[type="color"]) {
-  min-height: 2rem;
-  padding: 0.5rem;
-  cursor: pointer;
+	min-height: 2rem;
+	padding: 0.5rem;
+	cursor: pointer;
 }
 
 :where(input[type="checkbox"], input[type="radio"]) {
-  height: 1em;
-  width: 1em;
+	height: 1em;
+	width: 1em;
 }
 
 :where(input[type="radio"]) {
-  border-radius: 100%;
+	border-radius: 100%;
 }
 
 :where(input) {
-  vertical-align: top;
+	vertical-align: top;
 }
 
 :where(label) {
-  vertical-align: middle;
-  margin-bottom: 0.25rem;
-  display: inline-block;
+	vertical-align: middle;
+	margin-bottom: 0.25rem;
+	display: inline-block;
 }
 
 :where(
-    input:not([type="checkbox"]):not([type="radio"]),
-    input[type="range"],
-    select,
-    button,
-    textarea
-  ) {
-  -webkit-appearance: none;
-  appearance: none;
+		input:not([type="checkbox"]):not([type="radio"]),
+		input[type="range"],
+		select,
+		button,
+		textarea
+	) {
+	-webkit-appearance: none;
+	appearance: none;
 }
 
 :where(textarea) {
-  display: block;
-  margin-right: 0;
-  box-sizing: border-box;
-  resize: vertical;
+	display: block;
+	margin-right: 0;
+	box-sizing: border-box;
+	resize: vertical;
 }
 
 :where(textarea:not([cols])) {
-  width: 100%;
+	width: 100%;
 }
 
 :where(textarea:not([rows])) {
-  min-height: 2.5rem;
-  height: 8.75rem;
+	min-height: 2.5rem;
+	height: 8.75rem;
 }
 
 :where(select) {
-  background: var(--background) var(--select-arrow) calc(100% - 0.75rem) 50% /
-    0.75rem no-repeat;
-  padding-right: 2.25rem;
+	background: var(--background) var(--select-arrow) calc(100% - 0.75rem) 50% /
+		0.75rem no-repeat;
+	padding-right: 2.25rem;
 }
 
 :where(select[multiple]) {
-  padding-right: 0.625rem;
-  background-image: none;
-  overflow-y: auto;
+	padding-right: 0.625rem;
+	background-image: none;
+	overflow-y: auto;
 }
 
 :where(input:focus, select:focus, button:focus, textarea:focus) {
-  box-shadow: 0 0 0 0.125rem var(--focus);
+	box-shadow: 0 0 0 0.125rem var(--focus);
 }
 
 :where(
-    input[type="checkbox"]:active,
-    input[type="radio"]:active,
-    input[type="submit"]:active,
-    input[type="reset"]:active,
-    input[type="button"]:active,
-    input[type="range"]:active,
-    button:active
-  ) {
-  transform: translateY(0.125rem);
+		input[type="checkbox"]:active,
+		input[type="radio"]:active,
+		input[type="submit"]:active,
+		input[type="reset"]:active,
+		input[type="button"]:active,
+		input[type="range"]:active,
+		button:active
+	) {
+	transform: translateY(0.125rem);
 }
 
 :where(input:disabled, select:disabled, button:disabled, textarea:disabled) {
-  cursor: not-allowed;
-  opacity: 0.5;
+	cursor: not-allowed;
+	opacity: 0.5;
 }
 
 :where(::placeholder) {
-  color: var(--form-placeholder);
+	color: var(--form-placeholder);
 }
 
 :where(fieldset) {
-  border: 1px var(--focus) solid;
-  border-radius: 0.375rem;
-  margin: 0;
-  margin-bottom: 0.75rem;
-  padding: 0.625rem;
+	border: 1px var(--focus) solid;
+	border-radius: 0.375rem;
+	margin: 0;
+	margin-bottom: 0.75rem;
+	padding: 0.625rem;
 }
 
 :where(fieldset :is(h1, h2, h3, h4, h5, h6, p)) {
-  margin: 0;
+	margin: 0;
 }
 
 :where(legend) {
-  font-size: 0.9em;
-  font-weight: 600;
+	font-size: 0.9em;
+	font-weight: 600;
 }

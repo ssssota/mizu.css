@@ -1,8 +1,8 @@
 :where(a) {
-  text-decoration: none;
-  color: var(--links);
+	text-decoration: none;
+	color: var(--links);
 }
 
 :where(a:hover) {
-  text-decoration: underline;
+	text-decoration: underline;
 }
