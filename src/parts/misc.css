@@ -1,4 +1,4 @@
-:where(img, video) {
+:where(img, video, canvas) {
   max-width: 100%;
   height: auto;
 }
