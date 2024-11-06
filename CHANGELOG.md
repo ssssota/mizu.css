@@ -1,5 +1,11 @@
 # mizu.css
 
+## 0.1.3
+
+### Patch Changes
+
+- [#3](https://github.com/ssssota/mizu.css/pull/3) [`7257aab`](https://github.com/ssssota/mizu.css/commit/7257aab831b0a4a93effa9855669fa95c8689705) Thanks [@ssssota](https://github.com/ssssota)! - Set max-width for canvas
+
 ## 0.1.2
 
 ### Patch Changes
